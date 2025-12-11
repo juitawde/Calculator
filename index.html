@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A modern, beautifully designed calculator with glassmorphic effects and smooth animations">
+  <meta name="keywords" content="calculator, modern calculator, web calculator">
+  <meta name="author" content="Pallavi Sarovar">
+  <title>Modern Calculator</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="calculator">
+    <!-- Display Section -->
+    <div class="display">
+      <div class="previous-operand" id="previousOperand"></div>
+      <div class="current-operand" id="currentOperand">0</div>
+    </div>
+
+    <!-- Button Grid -->
+    <div class="buttons">
+      <!-- Row 1: Clear, Backspace, Division -->
+      <button class="btn-clear" data-action="clear">C</button>
+      <button class="btn-operator" data-action="backspace">←</button>
+      <button class="btn-operator" data-operator="÷">÷</button>
+
+      <!-- Row 2: 7, 8, 9, Multiply -->
+      <button data-number="7">7</button>
+      <button data-number="8">8</button>
+      <button data-number="9">9</button>
+      <button class="btn-operator" data-operator="×">×</button>
+
+      <!-- Row 3: 4, 5, 6, Subtract -->
+      <button data-number="4">4</button>
+      <button data-number="5">5</button>
+      <button data-number="6">6</button>
+      <button class="btn-operator" data-operator="-">-</button>
+
+      <!-- Row 4: 1, 2, 3, Add -->
+      <button data-number="1">1</button>
+      <button data-number="2">2</button>
+      <button data-number="3">3</button>
+      <button class="btn-operator" data-operator="+">+</button>
+
+      <!-- Row 5: 0, Decimal, Equals -->
+      <button class="btn-zero" data-number="0">0</button>
+      <button data-action="decimal">.</button>
+      <button class="btn-equals" data-action="equals">=</button>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
